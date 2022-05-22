@@ -6,6 +6,7 @@ import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
 import Products from './Pages/Products/Products';
+import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Products></Products>
         </RequireAuth>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
