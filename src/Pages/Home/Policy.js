@@ -4,7 +4,7 @@ import { LocationMarkerIcon, SwitchHorizontalIcon, GlobeIcon, LockClosedIcon } f
 const Policy = () => {
     return (
         <div className='max-w-7xl mx-auto my-10'>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-around items-center'>
                 <div className='flex justify-center items-center pr-5'>
                     <div><LocationMarkerIcon className="h-10 w-10 mr-2 text-primary" /></div>
                     <div>
