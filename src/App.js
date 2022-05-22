@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
+import NotFound from './Pages/NotFound/NotFound';
 import Products from './Pages/Products/Products';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
@@ -21,6 +22,7 @@ function App() {
         <Route path='/products' element={<RequireAuth>
           <Products></Products>
         </RequireAuth>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
