@@ -3,7 +3,6 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
-import './Navbar.css';
 
 const Navbar = () => {
 
@@ -15,14 +14,14 @@ const Navbar = () => {
     const navMenu = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/products'>Products</Link></li>
-        <li><Link to='/reviews'>Reviews</Link></li>
+        <li><Link to='/reviews'>All Reviews</Link></li>
         <li><Link to='/contact'>Contact Us</Link></li>
         <li><Link to='/blog'>Blogs</Link></li>
         <li>{user ? <button className="btn btn-ghost" onClick={logout}>SignOut</button> : <Link to='/login'>Login</Link>}</li>
     </>
 
     return (
-        <div className="navbar bg-base-100 max-w-7xl mx-auto">
+        <div className="navbar flex justify-between bg-base-100 max-w-7xl mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
