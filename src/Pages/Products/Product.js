@@ -8,14 +8,14 @@ const Product = ({ product }) => {
                 <img src={img} alt="Shoes" class="rounded-xl" />
             </figure>
             <div className='p-5'>
-                <h2 className='font-bold text-xl text-center'>
+                <h2 className='font-bold text-xl text-center text-primary'>
                     {name}
                 </h2>
-                <p >Price: {price}</p>
-                <p className='mb-0'>Available Quantity: {availableQuantity}</p>
+                <p ><span className='font-bold'>Price:</span> {price}</p>
+                <p className='mb-0'><span className='font-bold'>Available Quantity:</span> {availableQuantity}</p>
                 <p className='mb-12'>{description}</p>
                 <div class="card-actions text-center flex justify-center absolute bottom-0 min-w-full ">
-                    <button class="btn btn-primary  text-center mt-5 text-white hover:text-primary hover:border-primary hover:bg-transparent">Buy Now</button>
+                    <button class="btn btn-primary bg-transparent text-primary  text-center mt-5 hover:text-white  hover:bg-primary">Buy Now</button>
                 </div>
             </div>
         </div>

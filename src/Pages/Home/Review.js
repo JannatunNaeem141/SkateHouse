@@ -9,8 +9,8 @@ const Review = (props) => {
                 <img src={img} alt="" className='h-16 w-20 rounded-full m-3 text-center' />
             </div>
             <div>
-                <h4 className='m-0'>{name}</h4>
-                <p className='font-bold flex'>Rating: <span className='font-normal '>{rating}</span><StarIcon className="h-5 w-5 text-primary " /></p>
+                <h4 className='m-0 font-bold'>{name}</h4>
+                <p className='flex'>Rating: <span className='font-normal'>{rating}</span><StarIcon className="h-5 w-5 text-primary " /></p>
                 <p>{description}</p>
             </div>
         </div>
