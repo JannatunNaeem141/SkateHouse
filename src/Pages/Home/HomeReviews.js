@@ -5,7 +5,7 @@ import Review from './Review';
 
 const HomeReviews = (props) => {
     const [reviews, setReviews] = useReviews();
-    const sixReview = reviews.slice(0, 6);
+    const sixReview = [...reviews].reverse().slice(0, 6);
     return (
         <div className='my-16 max-w-7xl mx-auto'>
             <h1 className='text-center font-bold text-4xl text-primary mb-12'>Customer Reviews</h1>
@@ -13,7 +13,7 @@ const HomeReviews = (props) => {
                 <div className='grid grid-cols-3 gap-5'>
                     {
                         sixReview.map(review => <Review
-                            key={review.id}
+                            key={review._id}
                             review={review}
                         ></Review>)
                     }

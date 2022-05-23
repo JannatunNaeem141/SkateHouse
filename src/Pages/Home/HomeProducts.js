@@ -5,7 +5,7 @@ import Product from '../Products/Product';
 
 const HomeProducts = () => {
     const [products, setProducts] = useProducts();
-    const sixProducts = products.slice(0, 6);
+    const sixProducts = [...products].reverse().slice(0, 6);
     return (
         <div className='my-16 max-w-7xl mx-auto'>
             <h1 className='text-center font-bold text-4xl text-primary mb-12'>Popular By Choice</h1>
@@ -13,7 +13,7 @@ const HomeProducts = () => {
                 <div className='grid grid-cols-3 gap-5'>
                     {
                         sixProducts.map(product => <Product
-                            key={product.id}
+                            key={product._id}
                             product={product}
                         ></Product>)
                     }

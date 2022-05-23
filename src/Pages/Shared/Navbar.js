@@ -13,10 +13,11 @@ const Navbar = () => {
 
     const navMenu = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/products'>Products</Link></li>
-        <li><Link to='/reviews'>All Reviews</Link></li>
+        <li><Link to='/products'>All Products</Link></li>
+        {/* <li><Link to='/reviews'>All Reviews</Link></li> */}
         <li><Link to='/contact'>Contact Us</Link></li>
         <li><Link to='/blog'>Blogs</Link></li>
+        <li>{user && <p className='font-bold'>{user.displayName}</p>}</li>
         <li>{user ? <button className="btn btn-ghost" onClick={logout}>SignOut</button> : <Link to='/login'>Login</Link>}</li>
     </>
 
