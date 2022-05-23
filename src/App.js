@@ -7,6 +7,7 @@ import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
 import NotFound from './Pages/NotFound/NotFound';
+import ProductDetails from './Pages/Products/ProductDetails';
 import Products from './Pages/Products/Products';
 import Purchase from './Pages/Purchase/Purchase';
 import Footer from './Pages/Shared/Footer';
@@ -22,6 +23,9 @@ function App() {
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/blog' element={<Blogs></Blogs>}></Route>
         <Route path='/reviews' element={<AllReviews></AllReviews>}></Route>
+        <Route path='/product/:productId' element={<RequireAuth>
+          <ProductDetails></ProductDetails>
+        </RequireAuth>}></Route>
         <Route path='/products' element={<RequireAuth>
           <Products></Products>
         </RequireAuth>}></Route>

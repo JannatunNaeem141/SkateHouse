@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Product = ({ product }) => {
-    const { name, img, description, price, availableQuantity } = product;
+    const { name, img, description, price, _id, availableQuantity } = product;
     const navigate = useNavigate();
-    const handlePurchase = id => {
+    const handlePurchase = (id) => {
         navigate(`product/${id}`);
     }
     return (
@@ -20,8 +20,7 @@ const Product = ({ product }) => {
                 <p className='mb-0'><span className='font-bold'>Available Quantity:</span> {availableQuantity}</p>
                 <p className='mb-12'>{description}</p>
                 <div class="card-actions text-center flex justify-center absolute bottom-0 min-w-full ">
-                    <button onClick={() => handlePurchase()} class="btn btn-primary bg-transparent text-primary  text-center mt-5 hover:text-white  hover:bg-primary">Buy Now</button>
-                    {/* <Link to='/purchase' class="btn btn-primary bg-transparent text-primary  text-center mt-5 hover:text-white  hover:bg-primary">Buy Now</Link> */}
+                    <button onClick={() => handlePurchase(_id, name, img)} class="btn btn-primary bg-transparent text-primary  text-center mt-5 hover:text-white  hover:bg-primary">Buy Now</button>
                 </div>
             </div>
         </div>
