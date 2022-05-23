@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "minOrderQuantity": "5",
+        "availableQuantity": "35",
+        "price": "130.00",
+        "img": "https://i.ibb.co/zNxFxJ5/HTB1-DGInah-r-K1-Rk-HFq-Dq6y-JAFXab-jpg.webp",
+        "name": "SEBA Deluxe Frame 76 231mm-Silver",
+        "description": "Japy Skate SEBA Flat Inline Skates Frames 231mm And 243mm Slalom Roller Skates Frame 4 Colors With Axles Skating Shoes Basic"
+    },
+    {
+        "id": "2",
+        "minOrderQuantity": "55",
+        "availableQuantity": "40",
+        "price": "139.00",
+        "img": "https://i.ibb.co/4t8Y8qb/4-Dblackframes-600x600.png",
+        "name": "FR-4D Frames Flat (Pair)",
+        "description": "The FR UFS Freeride Frames are compatible with most of the UFS boots on the market. The frame's unique design offer skaters increased stability, which means more safety and more fun pushing your ability to the limits. The FR UFS Freeride Frames are easy to install and are offered in 4x80 - 243mm, 4x84 - 255mm, 4x90 - 273mm, 3x125 - 252mm, 3x110 - 236mm sizes."
+    },
+    {
+        "id": "3",
+        "minOrderQuantity": "5",
+        "availableQuantity": "55",
+        "price": "25.00",
+        "img": "https://i.ibb.co/pPQGkTR/Bankroll-Dimes-8pack.jpg",
+        "name": "BankRoll Dimes Skate Bearings - ABEC-9",
+        "description": "BankRoll Dimes are awesome bearings for any skate with wheels including inline skates, quad skates, and skateboards.  These bearings are rated “ABEC-9”.  Just like many other bearings on the market, these bearings fit on 8mm axles and have an extremely smooth roll. These bearings are easy to clean, long-lasting, and durable.  Bankroll bearings are ready to go out of the box — no “break in” time necessary. They are high quality, affordable, and recommended often by the Devaskation team! Speed skaters should upgrade to BankRoll Ceramics. Sold in packs of 16."
+    },
+    {
+        "id": "4",
+        "minOrderQuantity": "5",
+        "availableQuantity": "30",
+        "price": "44.95",
+        "img": "https://i.ibb.co/PwZfYZs/51w-A-0l-Tb-OL-SR600-315-PIWhite-Strip-Bottom-Left-0-35-SCLZZZZZZZ-FMpng-BG255-255-255.png",
+        "name": "Powerslide One Inline Skate Wheel",
+        "description": "The Powerslide One wheels are made for performance-driven fitness-skating and will ride smoothly over most types of asphalt with just the right amount of grip. They come here in a package of 8 wheels with 8mm spacers and the classic Wicked ABEC5 bearings that help provide an effortless gain of speed and a sustained roll."
+    },
+    {
+        "id": "5",
+        "minOrderQuantity": "5",
+        "availableQuantity": "80",
+        "price": "12.95",
+        "img": "https://i.ibb.co/tz5dD1b/matter-image-f1-inline-skate-wheel-qm.jpg",
+        "name": "Matter Image F1 Inline Skate Wheel",
+        "description": "From Matter comes the tried and tested Image wheels. They are the entry level wheels that will let you try one of the leading PU-formulas in the world of inline skating. Fast rolling and long lasting. Matter wheels from the USA use the Footprint scale, the F1 stands for footprint 1."
+    },
+    {
+        "id": "6",
+        "minOrderQuantity": "5",
+        "availableQuantity": "65",
+        "price": "34.95",
+        "img": "https://i.ibb.co/3crfPGp/k2-brake.jpg",
+        "name": "K2 Freedom Brake",
+        "description": "This complete brake assembly from K2 fits with their Freedom line of skates. Comes with all things needed to replace a worn out brake."
+    }
+]

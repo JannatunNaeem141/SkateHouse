@@ -1,41 +1,35 @@
 [
     {
-        "id": "1",
         "img": "https://i.ibb.co/9qKyywP/photo-1633332755192-727a05c4013d.jpg",
         "name": "Yan Huang",
         "rating": "4.5",
         "description": "Fit perfectly! I am a skater, these 3 wheels inline skate are suitable for me, even though there is no brake. And it is easy to stop and easy to use. I would recommend it to my classmates."
     },
     {
-        "id": "2",
         "img": "https://i.ibb.co/nq2ZRP7/photo-1570295999919-56ceb5ecca61.jpg",
         "name": "J. Mattson",
         "rating": "5",
         "description": "My Son loved these! Good quality and functionable!"
     },
     {
-        "id": "3",
         "img": "https://i.ibb.co/59smCLC/P1090594-1.jpg",
         "name": "Irina",
         "rating": "4.7",
         "description": "Bought this for my 11 yo daughter, who is entering word of speed skating. They are easy to put on and helped her improve her speed"
     },
     {
-        "id": "4",
         "img": "https://i.ibb.co/SQW1CVr/photo-1535713875002-d1d0cf377fde.jpg",
         "name": "Eunice wu",
         "rating": "4",
         "description": "Padding kept my feet comfortable and I use it often. Worth the price"
     },
     {
-        "id": "5",
         "img": "https://i.ibb.co/8PcPQHc/free-profile-photo-whatsapp-4.png",
         "name": "Revanth Teki",
         "rating": "4.3",
         "description": "I have been using these 3 wheel inline skates from past month. These are very frictionless and they pick up the speed so fast as well as their braking capability is good."
     },
     {
-        "id": "6",
         "img": "https://i.ibb.co/HXVVrGN/Greg-Emerson-edit-2.jpg",
         "name": "Mr. Mak",
         "rating": "5",
