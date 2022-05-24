@@ -68,7 +68,6 @@ const ProductDetails = () => {
                     <div className='ml-10'>
                         <div>
                             <h3 className='font-bold text-primary'>{product.name}</h3>
-                            <h5><span className='font-bold'>Supplier:</span>{product.supplier}</h5>
                             <h5><span className='font-bold'>Price: </span>${product.price}</h5>
                             <h5><span className='font-bold'>Available Quantity: </span>{product.availableQuantity}</h5>
                             <h5><span className='font-bold'>Minimum Order: </span>{product.minOrderQuantity}</h5>

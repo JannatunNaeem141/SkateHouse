@@ -17,8 +17,12 @@ const Navbar = () => {
         {/* <li><Link to='/reviews'>All Reviews</Link></li> */}
         <li><Link to='/contact'>Contact Us</Link></li>
         <li><Link to='/blog'>Blogs</Link></li>
+        {
+            user && <li><Link to='/dashboard'>Dashboard</Link></li>
+        }
         <li>{user && <p className='font-bold'>{user.displayName}</p>}</li>
         <li>{user ? <button className="btn btn-ghost" onClick={logout}>SignOut</button> : <Link to='/login'>Login</Link>}</li>
+
     </>
 
     return (
@@ -38,6 +42,11 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal p-0">
                     {navMenu}
                 </ul>
+            </div>
+            <div className="navbar-end lg:hidden">
+                <label tabIndex="1" for="dashboard-sidebar" className="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
             </div>
         </div>
     );
