@@ -5,6 +5,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import AddProduct from './Pages/Dashboard/AddProduct';
 import AddReview from './Pages/Dashboard/AddReview';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import MakeAdmin from './Pages/Dashboard/MakeAdmin';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AllReviews from './Pages/Home/AllReviews';
@@ -47,6 +48,7 @@ function App() {
           <Route path='addReview' element={<AddReview></AddReview>}></Route>
           <Route path='myOrders' element={<MyOrders></MyOrders>}></Route>
           <Route path='addProduct' element={<AddProduct></AddProduct>}></Route>
+          <Route path='makeAdmin' element={<MakeAdmin></MakeAdmin>}></Route>
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
