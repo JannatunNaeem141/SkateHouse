@@ -7,34 +7,34 @@ const CheckOut = () => {
     return (
         <div className='max-w-5xl mx-auto h-screen flex justify-center items-center'>
             <div>
-                <div class="flex justify-center items-center text-center mb-14">
+                <div className="flex justify-center items-center text-center mb-14">
                     <div>
-                        <label class="label">
-                            <span class="label-text">Your Name</span>
+                        <label className="label">
+                            <span className="label-text">Your Name</span>
                         </label>
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" required />
-                        <label class="label">
-                            <span class="label-text">Country/Region</span>
+                        <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" required />
+                        <label className="label">
+                            <span className="label-text">Country/Region</span>
                         </label>
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" required />
-                        <label class="label">
-                            <span class="label-text">Full Address</span>
+                        <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" required />
+                        <label className="label">
+                            <span className="label-text">Full Address</span>
                         </label>
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" required />
+                        <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" required />
                     </div>
                     <div className='ml-16'>
-                        <label class="label">
-                            <span class="label-text">Postcode</span>
+                        <label className="label">
+                            <span className="label-text">Postcode</span>
                         </label>
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" required />
-                        <label class="label">
-                            <span class="label-text">Phone</span>
+                        <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" required />
+                        <label className="label">
+                            <span className="label-text">Phone</span>
                         </label>
-                        <input type="number" placeholder="Type here" class="input input-bordered w-full max-w-xs" required />
-                        <label class="label">
-                            <span class="label-text">Email address</span>
+                        <input type="number" placeholder="Type here" className="input input-bordered w-full max-w-xs" required />
+                        <label className="label">
+                            <span className="label-text">Email address</span>
                         </label>
-                        <input type="email" placeholder="Type here" class="input input-bordered w-full max-w-xs" required />
+                        <input type="email" placeholder="Type here" className="input input-bordered w-full max-w-xs" required />
                     </div>
                 </div>
                 <div className='text-center'>

@@ -10,9 +10,9 @@ const Product = ({ product }) => {
     }
 
     return (
-        <div class="card w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-                <img src={img} alt="Shoes" class="rounded-xl" />
+        <div className="card w-96 bg-base-100 shadow-xl">
+            <figure className="px-10 pt-10">
+                <img src={img} alt="Shoes" className="rounded-xl" />
             </figure>
             <div className='p-5'>
                 <h2 className='font-bold text-xl text-center text-primary'>
@@ -21,8 +21,8 @@ const Product = ({ product }) => {
                 <p ><span className='font-bold'>Price: </span>${price}</p>
                 <p className='mb-0'><span className='font-bold'>Available Quantity:</span> {availableQuantity}</p>
                 <p className='mb-12'>{description}</p>
-                <div class="card-actions text-center flex justify-center absolute bottom-0 min-w-full ">
-                    <button onClick={() => handlePurchase(_id, name, img)} class="btn btn-primary bg-transparent text-primary  text-center mt-5 hover:text-white  hover:bg-primary">Buy Now</button>
+                <div className="card-actions text-center flex justify-center absolute bottom-0 min-w-full ">
+                    <button onClick={() => handlePurchase(_id, name, img)} className="btn btn-primary bg-transparent text-primary  text-center mt-5 hover:text-white  hover:bg-primary">Buy Now</button>
                 </div>
             </div>
         </div>

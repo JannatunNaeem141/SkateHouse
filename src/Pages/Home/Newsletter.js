@@ -14,10 +14,10 @@ const Newsletter = () => {
                 </div>
                 <div className='flex justify-center items-center'>
                     <div>
-                        <input type="email" placeholder="Enter email here..." class="input input-bordered w-full max-w-xs" />
+                        <input type="email" placeholder="Enter email here..." className="input input-bordered w-full max-w-xs" />
                     </div>
                     <div>
-                        <button class="btn btn-outline ml-5">Sign Up</button>
+                        <button className="btn btn-outline ml-5">Sign Up</button>
                     </div>
                 </div>
             </div>
