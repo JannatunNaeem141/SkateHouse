@@ -20,8 +20,8 @@ const AddProduct = () => {
             })
     };
     return (
-        <div className='max-w-2xl mx-auto my-16 bg-cyan-100 hover:rounded-3xl'>
-            <div className='p-12'>
+        <div className='max-w-2xl mx-auto  my-10 bg-cyan-100 rounded-lg shadow-xl'>
+            <div className='p-10'>
                 <h2 className='font-bold text-2xl text-cyan-500'>Add New Parts</h2>
                 <div class="divider mb-10"></div>
                 <form onSubmit={handleSubmit(onSubmit)} className='form-field grid gap-3 justify-items-center'>

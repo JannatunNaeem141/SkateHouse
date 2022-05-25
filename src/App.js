@@ -17,6 +17,7 @@ import Login from './Pages/Login/Login';
 import RequireAdmin from './Pages/Login/RequireAdmin';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
+import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import NotFound from './Pages/NotFound/NotFound';
 import CheckOut from './Pages/Products/CheckOut';
 import ProductDetails from './Pages/Products/ProductDetails';
@@ -36,6 +37,7 @@ function App() {
         <Route path='/blog' element={<Blogs></Blogs>}></Route>
         <Route path='/checkout' element={<CheckOut></CheckOut>}></Route>
         <Route path='/reviews' element={<AllReviews></AllReviews>}></Route>
+        <Route path='/portfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='/product/:productId' element={<RequireAuth>
           <ProductDetails></ProductDetails>
         </RequireAuth>}></Route>

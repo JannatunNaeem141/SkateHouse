@@ -14,11 +14,12 @@ const Navbar = () => {
 
     const navMenu = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/products'>All Products</Link></li>
+        <li><Link to='/products'>Products</Link></li>
         <li><Link to='/blog'>Blogs</Link></li>
         {
             user && <li><Link to='/dashboard'>Dashboard</Link></li>
         }
+        <li><Link to='/portfolio'>Portfolio</Link></li>
         <li>{user && <p className='font-bold'>{user.displayName}</p>}</li>
         <li>{user ? <button className="btn btn-ghost" onClick={logout}>SignOut</button> : <Link to='/login'>Login</Link>}</li>
 
@@ -27,7 +28,7 @@ const Navbar = () => {
     return (
         <div className='bg-cyan-400'>
             <div className="navbar flex justify-between max-w-7xl mx-auto">
-                <div className="navbar-start">
+                <div className="navbar-start lg:w-1/4">
                     <div className="dropdown">
                         <label tabIndex="0" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>

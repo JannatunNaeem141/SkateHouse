@@ -4,10 +4,10 @@ import auth from '../../firebase.init';
 
 const MyProfile = () => {
     const [user] = useAuthState(auth);
-    console.log(user);
+    console.log(user.photoURL)
     return (
         <div className='my-16'>
-            <div className='bg-cyan-200 w-3/5 mx-auto p-10'>
+            <div className='bg-cyan-200 w-3/5 mx-auto p-10 rounded-lg shadow-xl'>
                 <div className='mt-5'>
                     <p className='text-4xl text-primary'>My Profile</p>
                     <div class="divider"></div>
