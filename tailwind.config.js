@@ -7,7 +7,7 @@ module.exports = {
     themes: [
       {
         skatestheme: {
-          primary: "#458DF3",
+          primary: "#06b6d4",
           secondary: "#74a8f2",
           accent: "#2E5B9E",
           neutral: "#3d4451",

@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useParams } from 'react-router-dom';
 import auth from '../../firebase.init';
-import { PlusIcon, MinusIcon } from '@heroicons/react/solid';
 
 const ProductDetails = () => {
     const [user] = useAuthState(auth);
     const { productId } = useParams();
-    const [product, setProduct] = useState([]);
-    var [quantity, setQuantity] = useState([]);
+    const [product, setProduct] = useState({});
+    const [quantity, setQuantity] = useState([]);
     var { availableQuantity, minOrderQuantity } = product;
 
     useEffect(() => {
@@ -19,23 +18,16 @@ const ProductDetails = () => {
     }, [product]);
 
 
-    const handleValue = () => { }
+    function handleValue(val) {
+        setQuantity(val.target.value);
+    }
 
-    const handleIncrease = id => {
-        const result = Number(quantity) + 1;
-        setQuantity(result);
-    };
-    const handleDecrease = id => {
-        const result = Number(quantity) - 1;
-        setQuantity(result);
-    };
-
-    const handlePurchase = (id) => {
+    const handleCheckout = (id) => {
         const url = `http://localhost:5000/product`;
         const newQuantity = Number(availableQuantity) - Number(quantity);
         const newObject = {
             id: productId,
-            testQuantity: newQuantity
+            updatedQuantity: newQuantity
         }
         fetch(url, {
             method: 'PUT',
@@ -49,13 +41,10 @@ const ProductDetails = () => {
                 console.log(result);
             })
     }
-    const handleCheckout = () => {
-
-    }
 
     return (
         <div className='max-w-5xl mx-auto h-screen flex justify-center items-center'>
-            <div>
+            <div className='bg-cyan-100 p-12 rounded-lg shadow-lg'>
                 <div>
                     <p className='text-right font-bold'>{user.displayName}</p>
                     <p className='text-right'>{user.email}</p>
@@ -70,21 +59,19 @@ const ProductDetails = () => {
                             <h3 className='font-bold text-primary'>{product.name}</h3>
                             <h5><span className='font-bold'>Price: </span>${product.price}</h5>
                             <h5><span className='font-bold'>Available Quantity: </span>{product.availableQuantity}</h5>
-                            <h5><span className='font-bold'>Minimum Order: </span>{product.minOrderQuantity}</h5>
+                            <h5 className='mb-3'><span className='font-bold'>Minimum Order: </span>{product.minOrderQuantity}</h5>
                             <p>{product.description}</p>
 
                         </div>
                         <div className='flex items-center my-5'>
-                            <button onClick={() => handleIncrease(product._id)}><PlusIcon className="h-10 w-10  text-primary" /></button>
-                            <input onChange={handleValue()} value={quantity} type="number" placeholder="Order Quantity" className="border-2 p-1 text-center text-xl" />
-                            <button onClick={() => handleDecrease(product._id)}><MinusIcon className="h-10 w-10 mr-2 text-primary" /></button>
+                            <input onChange={handleValue} type="number" placeholder="Order Quantity" className="border-2 p-1 text-center text-sm" />
+                        </div>
+                        <div>
+                            <button className='btn btn-primary text-white' onClick={handleCheckout()}>Checkout</button>
                         </div>
                     </div>
+                </div>
 
-                </div>
-                <div className='text-center'>
-                    <Link to='/checkout' className='btn btn-primary text-white'>Checkout</Link>
-                </div>
             </div>
         </div>
     );
