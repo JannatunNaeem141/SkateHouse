@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Blogs from './Pages/Blogs/Blogs';
 import AddProduct from './Pages/Dashboard/AddProduct';
@@ -7,6 +8,7 @@ import AddReview from './Pages/Dashboard/AddReview';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin';
 import ManageAll from './Pages/Dashboard/ManageAll';
+import ManageOrders from './Pages/Dashboard/ManageOrders';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AllReviews from './Pages/Home/AllReviews';
@@ -52,6 +54,7 @@ function App() {
           <Route path='addProduct' element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
           <Route path='makeAdmin' element={<RequireAdmin><MakeAdmin></MakeAdmin></RequireAdmin>}></Route>
           <Route path='manageAll' element={<RequireAdmin><ManageAll></ManageAll></RequireAdmin>}></Route>
+          <Route path='manageOrders' element={<RequireAdmin><ManageOrders></ManageOrders></RequireAdmin>}></Route>
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

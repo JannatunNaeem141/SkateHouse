@@ -1,8 +1,8 @@
 import React from 'react';
 
 const CheckOut = () => {
-    const handlePurchase = () => {
 
+    const handlePurchase = () => {
     }
     return (
         <div className='max-w-5xl mx-auto h-screen flex justify-center items-center'>
@@ -41,7 +41,7 @@ const CheckOut = () => {
                     <button className='btn btn-primary text-white hover:text-primary hover:bg-transparent hover:border-primary' onClick={handlePurchase()}>Purchase</button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

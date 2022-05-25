@@ -14,7 +14,6 @@ const ManageAll = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
                     const remaining = products.filter(product => product._id !== id);
                     setProducts(remaining);
                 })
@@ -48,7 +47,7 @@ const ManageAll = () => {
                 </tbody>
             </table>
             <div className='add-furniture'>
-                <Link to='/dashboard/addProduct' className='add-furniture-btn'>Add New Furniture</Link>
+                <Link to='/dashboard/addProduct' className='add-furniture-btn'>Add New Product</Link>
             </div>
         </div >
     );
