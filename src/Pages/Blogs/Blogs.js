@@ -3,7 +3,7 @@ import React from 'react';
 const Blogs = () => {
     return (
         <div className='max-w-7xl mx-auto py-16'>
-            <div>
+            <div className='lg:w-full w-4/5 ml-10 lg:ml-0'>
                 <div>
                     <h4 className='font-bold text-xl text-primary'>1. How will you improve the performance of a React Application?</h4>
                     <p className='font-bold'>Using Immutable Data Structures</p>

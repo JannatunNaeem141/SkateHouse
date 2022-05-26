@@ -25,8 +25,8 @@ const AddReview = () => {
             })
     };
     return (
-        <div className='max-w-2xl mx-auto my-16 bg-cyan-100 hover:rounded-3xl'>
-            <div className='p-12'>
+        <div className='max-w-2xl md:mx-auto lg:mx-auto my-10 lg:my-16 bg-cyan-100 rounded-xl shadow-xl mx-5'>
+            <div className='p-5 md:p-10 lg:p-12'>
                 <h2 className='font-bold text-2xl text-cyan-500 mb-10'>Add A Review</h2>
                 <form onSubmit={handleSubmit(onSubmit)} className='form-field grid gap-3 justify-items-center'>
                     <input className='mb-3 p-2 w-full border-2' placeholder="Name" value={userName} {...register("name", { required: true, maxLength: 80 })} />

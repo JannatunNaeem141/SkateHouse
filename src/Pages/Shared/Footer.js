@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="footer footer-center p-10  text-primary-content bg-cyan-400">
             <div>
-                <Link className='font-bold text-4xl mb-4' to="/">SkateHouseBD</Link>
+                <Link className='font-bold text-3xl lg:text-4xl md:text-4xl mb-4' to="/">SkateHouseBD</Link>
             </div>
             <div className="grid grid-flow-col gap-4">
                 <Link to='/products' className="link link-hover">Products</Link>

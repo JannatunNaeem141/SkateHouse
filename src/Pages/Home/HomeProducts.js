@@ -7,9 +7,9 @@ const HomeProducts = () => {
     const [products, setProducts] = useProducts();
     const sixProducts = [...products].reverse().slice(0, 6);
     return (
-        <div className='mb-16 max-w-7xl mx-auto'>
+        <div className='my-16 lg:my-0 lg:mb-16 max-w-7xl mx-auto'>
             <h1 className='text-center font-bold text-4xl text-primary'>Popular By Choice</h1>
-            <div className='divider mb-12'></div>
+            <div className='divider mb-5 md:mb-12 lg:mb-12'></div>
             <div className=''>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {

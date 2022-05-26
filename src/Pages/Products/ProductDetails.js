@@ -43,18 +43,18 @@ const ProductDetails = () => {
     }
 
     return (
-        <div className='max-w-5xl mx-auto h-screen flex justify-center items-center'>
-            <div className='bg-cyan-100 p-12 rounded-lg shadow-lg'>
-                <div>
+        <div className='max-w-5xl mx-auto md:h-screen lg:h-screen flex justify-center items-center'>
+            <div className='bg-cyan-100 p-12 rounded-lg shadow-lg md:mx-10'>
+                <div className='mb-10 lg:mb-0'>
                     <p className='text-right font-bold'>{user.displayName}</p>
                     <p className='text-right'>{user.email}</p>
                 </div>
-                <h2 className='text-center text-4xl font-bold text-primary mb-12'>Parts Details</h2>
-                <div className='flex justify-center items-center'>
+                <h2 className='text-center text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-12'>Parts Details</h2>
+                <div className='grid md:flex lg:flex justify-center items-center'>
                     <div className='text-center'>
                         <img src={product.img} alt="" />
                     </div>
-                    <div className='ml-10'>
+                    <div className='lg:ml-10'>
                         <div>
                             <h3 className='font-bold text-primary'>{product.name}</h3>
                             <h5><span className='font-bold'>Price: </span>${product.price}</h5>
@@ -67,7 +67,8 @@ const ProductDetails = () => {
                             <input onChange={handleValue} type="number" placeholder="Order Quantity" className="border-2 p-1 text-center text-sm" />
                         </div>
                         <div>
-                            <button className='btn btn-primary text-white' onClick={handleCheckout()}>Checkout</button>
+                            <Link to='/checkout' className='btn btn-primary text-white' onClick={handleCheckout()}>Checkout</Link>
+                            {/* <button className='btn btn-primary text-white' onClick={handleCheckout()}>Checkout</button> */}
                         </div>
                     </div>
                 </div>

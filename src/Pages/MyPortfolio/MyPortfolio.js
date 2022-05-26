@@ -4,14 +4,14 @@ import profile from '../../images/Profile.jpg';
 
 const MyPortfolio = () => {
     return (
-        <div className='max-w-7xl mx-auto my-16 h-screen'>
+        <div className='max-w-7xl mx-auto lg:my-16 lg:h-screen'>
             <div className='bg-cyan-100 p-10 rounded-lg shadow-lg'>
                 <div>
-                    <div className='flex justify-center items-center'>
-                        <div className='w-1/4 text-center flex justify-center'>
-                            <img className='w-64 h-80 border-8 border-primary' src={profile} alt="" />
+                    <div className='grid lg:flex justify-center items-center'>
+                        <div className='lg:w-1/4 text-center flex justify-center'>
+                            <img className='lg:w-64 h-80 border-8 border-primary' src={profile} alt="" />
                         </div>
-                        <div className='w-1/2'>
+                        <div className='lg:w-1/2'>
                             <h2 className='text-center font-bold text-4xl mb-5'>Jannatun Naeem</h2>
                             <p>
                                 Hi! My name is Naeem. I am a full stack web developer, looking to enhance my professional experience. I'm skilled with HTML5, CSS3, JavaScript, Python, React.js, Node.js, MongoDB etc.
@@ -30,8 +30,8 @@ const MyPortfolio = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='mt-16 w-3/4 mx-auto'>
-                        <div className='flex'>
+                    <div className='mt-16 lg:w-3/4 mx-auto'>
+                        <div className='grid md:flex lg:flex'>
                             <div className='w-1/2'>
                                 <div className='mb-5'>
                                     <small className='text-primary'>Full Name</small>
@@ -42,7 +42,7 @@ const MyPortfolio = () => {
                                     <p className='text-xl'>jannatunnaeem141@gmail.com</p>
                                 </div>
                             </div>
-                            <div className='mb-5 w-1/2'>
+                            <div className='mb-5 lg:w-1/2'>
                                 <small className='text-primary'>Educational Background</small>
                                 <p className='text-xl'>BSS (Hons)</p>
                                 <p className='text-xl'>3rd Year</p>
@@ -54,7 +54,7 @@ const MyPortfolio = () => {
                             <p className='mb-5 text-primary'>Three of my Recent Projects:</p>
                             <Link to={{ pathname: '//corporate-sales-trainer.web.app/' }} className='btn btn-primary bg-transparent  mr-5 text-primary hover:bg-primary hover:text-white'>Project 1</Link>
                             <Link to='' target="_blank" className='btn btn-primary bg-transparent  mr-5 text-primary hover:bg-primary hover:text-white'>Project 2</Link>
-                            <Link to={{ pathname: '//furniturehut-4239e.web.app/' }} target="_blank" className='btn btn-primary bg-transparent  mr-5 text-primary hover:bg-primary hover:text-white'>Project 3</Link>
+                            <Link to={{ pathname: '//furniturehut-4239e.web.app/' }} target="_blank" className='btn btn-primary bg-transparent mt-5 lg:mt-0  mr-5 text-primary hover:bg-primary hover:text-white'>Project 3</Link>
                         </div>
                     </div>
                 </div>

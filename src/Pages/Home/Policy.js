@@ -6,7 +6,7 @@ const Policy = () => {
     return (
         <div style={{ backgroundImage: `url(${skate2})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
             <div className='max-w-7xl mx-auto py-16'>
-                <div className='grid md:flex lg:flex justify-around items-center h-96'>
+                <div className='grid md:grid md:grid-cols-2 lg:flex justify-around items-center h-96'>
                     <div className='flex justify-center items-center mb-5 lg:mb-0 lg:pr-5'>
                         <div><LocationMarkerIcon className="h-10 w-10 mr-2 text-cyan-700" /></div>
                         <div>
@@ -14,7 +14,7 @@ const Policy = () => {
                             <p className='text-primary'>On orders over $99</p>
                         </div>
                     </div>
-                    <div className='flex justify-center items-center pr-5'>
+                    <div className='flex justify-center  items-center pr-5'>
                         <div><SwitchHorizontalIcon className="h-10 w-10 mr-2 text-cyan-700" /></div>
                         <div>
                             <p className='font-bold text-primary text-xl'>Easy 60-days Returns/Exchange</p>
