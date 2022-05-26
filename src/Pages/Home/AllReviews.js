@@ -5,8 +5,8 @@ import Review from './Review';
 const AllReviews = () => {
     const [reviews, setReviews] = useReviews();
     return (
-        <div className='my-16 max-w-7xl mx-auto h-screen'>
-            <div className='grid grid-cols-3 gap-5'>
+        <div className='my-16 max-w-7xl mx-auto lg:h-screen'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
                     reviews.map(review => <Review
                         key={review._id}

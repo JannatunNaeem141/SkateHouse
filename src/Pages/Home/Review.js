@@ -4,8 +4,8 @@ import { StarIcon } from '@heroicons/react/solid';
 const Review = (props) => {
     const { name, img, description, rating } = props.review;
     return (
-        <div className='p-5 flex'>
-            <div className='flex justify-center mr-5'>
+        <div className='p-5 lg:flex'>
+            <div className='flex lg:justify-center mr-5'>
                 <img src={img} alt="" className='h-16 w-20 rounded-full m-3 text-center' />
             </div>
             <div>

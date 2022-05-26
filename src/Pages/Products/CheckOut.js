@@ -38,7 +38,7 @@ const CheckOut = () => {
                     </div>
                 </div>
                 <div className='text-center'>
-                    <button className='btn btn-primary text-white hover:text-primary hover:bg-transparent hover:border-primary' onClick={handlePurchase()}>Purchase</button>
+                    <button className='btn btn-primary text-white hover:text-primary hover:bg-transparent hover:border-primary' onClick={handlePurchase()}>Confirm</button>
                 </div>
             </div>
         </div >
