@@ -53,7 +53,7 @@ const MyPortfolio = () => {
                         <div className='mb-5'>
                             <p className='mb-5 text-primary'>Three of my Recent Projects:</p>
                             <Link to={{ pathname: '//corporate-sales-trainer.web.app/' }} className='btn btn-primary bg-transparent  mr-5 text-primary hover:bg-primary hover:text-white'>Project 1</Link>
-                            <Link to='' target="_blank" className='btn btn-primary bg-transparent  mr-5 text-primary hover:bg-primary hover:text-white'>Project 2</Link>
+                            <Link to={{ pathname: '//skate-house-bd.web.app/' }} target="_blank" className='btn btn-primary bg-transparent  mr-5 text-primary hover:bg-primary hover:text-white'>Project 2</Link>
                             <Link to={{ pathname: '//furniturehut-4239e.web.app/' }} target="_blank" className='btn btn-primary bg-transparent mt-5 lg:mt-0  mr-5 text-primary hover:bg-primary hover:text-white'>Project 3</Link>
                         </div>
                     </div>

@@ -11,7 +11,7 @@ const ProductDetails = () => {
     var { availableQuantity, minOrderQuantity } = product;
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://thawing-tundra-73200.herokuapp.com/product/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -23,7 +23,7 @@ const ProductDetails = () => {
     }
 
     const handleCheckout = (id) => {
-        const url = `http://localhost:5000/product`;
+        const url = `https://thawing-tundra-73200.herokuapp.com/product`;
         const newQuantity = Number(availableQuantity) - Number(quantity);
         const newObject = {
             id: productId,

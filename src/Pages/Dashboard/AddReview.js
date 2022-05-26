@@ -10,7 +10,7 @@ const AddReview = () => {
     const url = user.photoURL;
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const url = `http://localhost:5000/review`;
+        const url = `https://thawing-tundra-73200.herokuapp.com/review`;
         fetch(url, {
             method: 'POST',
             headers: {

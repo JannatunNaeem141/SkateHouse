@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const url = `http://localhost:5000/product`;
+        const url = `https://thawing-tundra-73200.herokuapp.com/product`;
         fetch(url, {
             method: 'POST',
             headers: {
