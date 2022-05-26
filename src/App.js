@@ -11,6 +11,7 @@ import ManageAll from './Pages/Dashboard/ManageAll';
 import ManageOrders from './Pages/Dashboard/ManageOrders';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import AboutUs from './Pages/Home/AboutUs/AboutUs';
 import AllReviews from './Pages/Home/AllReviews';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
@@ -35,6 +36,7 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/blog' element={<Blogs></Blogs>}></Route>
+        <Route path='/about' element={<AboutUs></AboutUs>}></Route>
         <Route path='/checkout' element={<CheckOut></CheckOut>}></Route>
         <Route path='/reviews' element={<AllReviews></AllReviews>}></Route>
         <Route path='/portfolio' element={<MyPortfolio></MyPortfolio>}></Route>
